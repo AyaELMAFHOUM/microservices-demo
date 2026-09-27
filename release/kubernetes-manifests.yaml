@@ -834,6 +834,8 @@ spec:
         app: paymentservice
     spec:
       serviceAccountName: paymentservice
+      nodeSelector:
+        zone: payment
       terminationGracePeriodSeconds: 5
       securityContext:
         fsGroup: 1000
